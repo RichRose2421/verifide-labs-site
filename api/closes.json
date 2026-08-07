@@ -1,0 +1,225 @@
+{
+ "generated_utc": "2026-08-07T05:09:31+00:00",
+ "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
+ "n_closed": 27,
+ "total_R": -2.09,
+ "win_rate": 0.259,
+ "trades": [
+  {
+   "closed_utc": "2026-07-27 09:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": -1.05,
+   "exit": "stop",
+   "cum_R": -1.05
+  },
+  {
+   "closed_utc": "2026-07-27 13:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": 2.95,
+   "exit": "target hit",
+   "cum_R": 1.9
+  },
+  {
+   "closed_utc": "2026-07-27 14:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.09,
+   "exit": "stop",
+   "cum_R": 0.81
+  },
+  {
+   "closed_utc": "2026-07-27 14:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": -1.12,
+   "exit": "stop",
+   "cum_R": -0.31
+  },
+  {
+   "closed_utc": "2026-07-27 21:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": -1.07,
+   "exit": "stop",
+   "cum_R": -1.38
+  },
+  {
+   "closed_utc": "2026-07-28 13:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": 2.92,
+   "exit": "target hit",
+   "cum_R": 1.54
+  },
+  {
+   "closed_utc": "2026-07-28 15:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": -1.05,
+   "exit": "stop",
+   "cum_R": 0.49
+  },
+  {
+   "closed_utc": "2026-07-29 01:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": 2.95,
+   "exit": "target hit",
+   "cum_R": 3.44
+  },
+  {
+   "closed_utc": "2026-07-30 14:00",
+   "asset": "PUMPFUN",
+   "side": "short",
+   "net_R": -1.03,
+   "exit": "stop",
+   "cum_R": 2.41
+  },
+  {
+   "closed_utc": "2026-07-30 16:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": -1.05,
+   "exit": "stop",
+   "cum_R": 1.36
+  },
+  {
+   "closed_utc": "2026-07-31 17:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": -1.06,
+   "exit": "stop",
+   "cum_R": 0.3
+  },
+  {
+   "closed_utc": "2026-08-01 02:00",
+   "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": -1.04,
+   "exit": "stop",
+   "cum_R": -0.74
+  },
+  {
+   "closed_utc": "2026-08-01 15:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": 2.25,
+   "exit": "time stop",
+   "cum_R": 1.51
+  },
+  {
+   "closed_utc": "2026-08-01 18:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.06,
+   "exit": "stop",
+   "cum_R": 0.45
+  },
+  {
+   "closed_utc": "2026-08-01 23:00",
+   "asset": "ENA",
+   "side": "short",
+   "net_R": 1.18,
+   "exit": "time stop",
+   "cum_R": 1.63
+  },
+  {
+   "closed_utc": "2026-08-02 05:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -1.05,
+   "exit": "stop",
+   "cum_R": 0.58
+  },
+  {
+   "closed_utc": "2026-08-02 06:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": 2.94,
+   "exit": "target hit",
+   "cum_R": 3.52
+  },
+  {
+   "closed_utc": "2026-08-02 16:00",
+   "asset": "WLD",
+   "side": "long",
+   "net_R": -1.06,
+   "exit": "stop",
+   "cum_R": 2.46
+  },
+  {
+   "closed_utc": "2026-08-02 21:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -1.08,
+   "exit": "stop",
+   "cum_R": 1.38
+  },
+  {
+   "closed_utc": "2026-08-03 14:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -1.06,
+   "exit": "stop",
+   "cum_R": 0.32
+  },
+  {
+   "closed_utc": "2026-08-03 17:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": -0.07,
+   "exit": "time stop",
+   "cum_R": 0.25
+  },
+  {
+   "closed_utc": "2026-08-04 08:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": -1.06,
+   "exit": "stop",
+   "cum_R": -0.81
+  },
+  {
+   "closed_utc": "2026-08-04 19:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": 2.96,
+   "exit": "target hit",
+   "cum_R": 2.15
+  },
+  {
+   "closed_utc": "2026-08-06 09:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.05,
+   "exit": "stop",
+   "cum_R": 1.1
+  },
+  {
+   "closed_utc": "2026-08-06 09:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": -1.07,
+   "exit": "stop",
+   "cum_R": 0.03
+  },
+  {
+   "closed_utc": "2026-08-06 15:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.03,
+   "exit": "stop",
+   "cum_R": -1.0
+  },
+  {
+   "closed_utc": "2026-08-06 16:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -1.09,
+   "exit": "stop",
+   "cum_R": -2.09
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verifide Labs — Live Book of Record</title>
+<meta name="description" content="A systematic crypto trading book, published trade by trade — wins and losses — with pre-registered, hash-verifiable research behind it.">
+<style>
+:root{--bg:#0f1115;--card:#171a21;--ink:#e8eaf0;--mut:#9aa3b2;--line:#262b36;
+--pos:#4cc38a;--neg:#e5734a;--acc:#6ea8fe}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,'Segoe UI',Roboto,sans-serif;max-width:920px;margin:0 auto;padding:32px 20px}
+h1{font-size:24px;font-weight:650}
+.sub{color:var(--mut);font-size:14px;margin:6px 0 24px}
+h2{font-size:13px;font-weight:600;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin:28px 0 10px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.tile .v{font-size:26px;font-weight:650}
+.tile .l{color:var(--mut);font-size:12px;margin-top:2px}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:12px}
+#chart{width:100%;height:220px;display:block}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{color:var(--mut);text-align:left;font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:6px 8px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+.prose{color:var(--ink);font-size:14.5px}
+.prose p{margin:0 0 10px}
+a{color:var(--acc);text-decoration:none}
+.mono{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mut);word-break:break-all}
+footer{color:var(--mut);font-size:12.5px;margin-top:28px;line-height:1.6}
+</style></head><body>
+<h1>Verifide Labs</h1>
+<div class="sub">A systematic crypto perp book, published trade by trade — wins and losses, as they close. <span id="gen"></span></div>
+
+<div class="tiles" id="tiles"></div>
+
+<h2>Cumulative R — every closed trade</h2>
+<div class="card"><canvas id="chart"></canvas></div>
+
+<h2>Recent closes</h2>
+<div class="card"><table id="tbl"><thead><tr><th>Closed (UTC)</th><th>Asset</th><th>Side</th><th>Result</th><th>Exit</th></tr></thead><tbody></tbody></table></div>
+
+<h2>Why you can trust these numbers</h2>
+<div class="card prose">
+<p>One book, one venue, never blended. Every close posts publicly as it happens — losers included. Trades close one of three ways: a protective stop, a profit target, or a time stop (a maximum holding window, disclosed openly).</p>
+<p>Behind the book is a research process built to kill its own ideas: every hypothesis is pre-registered and cryptographically hashed <em>before</em> it touches data, tested against held-out data it never saw, and corrected for every candidate we ever tried. Most ideas die. We publish the graveyard.</p>
+<p id="rigor" class="mono"></p>
+</div>
+
+<footer>
+Live feed: <a href="api/closes.json">closes.json</a> · pre-registration hashes: <a href="api/rigor.json">rigor.json</a> · updates automatically every ~30 minutes.<br>
+Follow the book live: <a href="https://x.com/Veri_Fide_Labs">@Veri_Fide_Labs</a> · methodology &amp; research notes on <a href="#" id="sublink">Substack</a>.<br>
+Nothing here is financial advice. Past results, simulated or real, do not guarantee future performance.
+</footer>
+<script>
+(async function(){
+  const d = await (await fetch('api/closes.json')).json();
+  document.getElementById('gen').textContent = 'Updated ' + d.generated_utc.replace('T',' ').slice(0,16) + 'Z · ' + d.book;
+  const t = document.getElementById('tiles');
+  const mk=(v,l,c)=>{const e=document.createElement('div');e.className='tile';
+    e.innerHTML=`<div class="v ${c||''}">${v}</div><div class="l">${l}</div>`;t.appendChild(e)};
+  mk(d.n_closed,'closed trades');
+  mk((d.total_R>=0?'+':'')+d.total_R.toFixed(1)+'R','total result',d.total_R>=0?'pos':'neg');
+  mk(Math.round(d.win_rate*100)+'%','win rate (by design: few big wins carry many small stops)');
+  const last=d.trades[d.trades.length-1];
+  if(last) mk((last.net_R>=0?'+':'')+last.net_R+'R','latest close · '+last.asset+' '+last.side,last.net_R>=0?'pos':'neg');
+  // table: last 12, newest first
+  const tb=document.querySelector('#tbl tbody');
+  d.trades.slice(-12).reverse().forEach(x=>{
+    const r=document.createElement('tr');
+    r.innerHTML=`<td>${x.closed_utc}</td><td>${x.asset}</td><td>${x.side}</td>
+      <td class="${x.net_R>=0?'pos':'neg'}">${(x.net_R>=0?'+':'')+x.net_R}R</td><td>${x.exit}</td>`;
+    tb.appendChild(r)});
+  // chart: cumulative R line
+  const c=document.getElementById('chart'),ctx=c.getContext('2d');
+  const W=c.width=c.clientWidth*devicePixelRatio, H=c.height=220*devicePixelRatio;
+  const xs=d.trades.map((_,i)=>i), ys=d.trades.map(x=>x.cum_R);
+  const lo=Math.min(0,...ys), hi=Math.max(1,...ys), pad=28*devicePixelRatio;
+  const X=i=>pad+(W-2*pad)*(i/Math.max(1,xs.length-1));
+  const Y=v=>H-pad-(H-2*pad)*((v-lo)/(hi-lo||1));
+  ctx.strokeStyle='#262b36';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(pad,Y(0));ctx.lineTo(W-pad,Y(0));ctx.stroke();
+  ctx.fillStyle='#9aa3b2';ctx.font=(11*devicePixelRatio)+'px sans-serif';
+  ctx.fillText('0R',4*devicePixelRatio,Y(0)-4);
+  ctx.strokeStyle='#6ea8fe';ctx.lineWidth=2*devicePixelRatio;ctx.beginPath();
+  ys.forEach((v,i)=>i?ctx.lineTo(X(i),Y(v)):ctx.moveTo(X(i),Y(v)));ctx.stroke();
+  const lv=ys[ys.length-1];
+  ctx.fillStyle='#6ea8fe';ctx.fillText((lv>=0?'+':'')+lv.toFixed(1)+'R',X(xs.length-1)-40*devicePixelRatio,Y(lv)-8);
+  const rg = await (await fetch('api/rigor.json')).json();
+  document.getElementById('rigor').textContent =
+    rg.preregistrations.length+' pre-registrations on record · latest sha256: '+
+    (rg.preregistrations.slice(-1)[0]||{sha256:'—'}).sha256.slice(0,32)+'…';
+})();
+</script>
+</body></html>
