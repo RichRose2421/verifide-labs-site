@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-08-16T22:00:15+00:00",
+ "generated_utc": "2026-08-16T22:30:25+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 59,
- "total_R": -22.48,
- "win_rate": 0.186,
+ "n_closed": 61,
+ "total_R": -20.69,
+ "win_rate": 0.197,
  "trades": [
   {
    "closed_utc": "2026-07-27 09:00",
@@ -476,6 +476,22 @@
    "net_R": -1.13,
    "exit": "stop",
    "cum_R": -22.48
+  },
+  {
+   "closed_utc": "2026-08-16 21:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.06,
+   "exit": "stop",
+   "cum_R": -23.54
+  },
+  {
+   "closed_utc": "2026-08-16 21:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": 2.85,
+   "exit": "target hit",
+   "cum_R": -20.69
   }
  ]
 }
