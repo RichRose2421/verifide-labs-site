@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-08-20T09:59:52+00:00",
+ "generated_utc": "2026-08-20T10:30:03+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 77,
- "total_R": -13.89,
- "win_rate": 0.234,
+ "n_closed": 78,
+ "total_R": -10.94,
+ "win_rate": 0.244,
  "trades": [
   {
    "closed_utc": "2026-07-27 09:00",
@@ -620,6 +620,14 @@
    "net_R": 2.92,
    "exit": "target hit",
    "cum_R": -13.89
+  },
+  {
+   "closed_utc": "2026-08-20 09:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": 2.95,
+   "exit": "target hit",
+   "cum_R": -10.94
   }
  ]
 }
