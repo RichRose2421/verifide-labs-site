@@ -1,33 +1,31 @@
 {
- "generated_utc": "2026-08-22T10:16:54+00:00",
+ "generated_utc": "2026-08-22T10:47:31+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 90,
- "total_R": 8.59,
- "win_rate": 0.3,
+ "n_closed": 67,
+ "total_R": 5.94,
+ "cap_concurrent": 4,
+ "as_recorded_uncapped": {
+  "n": 90,
+  "total_R": 8.59,
+  "avg_R": 0.095,
+  "win_rate": 0.3
+ },
+ "rejected_by_cap": {
+  "n": 23,
+  "total_R": 2.63,
+  "avg_R": 0.114,
+  "win_rate": 0.304
+ },
+ "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
+ "win_rate": 0.299,
  "trades": [
-  {
-   "closed_utc": "2026-07-27 09:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -1.05
-  },
   {
    "closed_utc": "2026-07-27 13:00",
    "asset": "PUMPFUN",
    "side": "long",
    "net_R": 2.95,
    "exit": "target hit",
-   "cum_R": 1.9
-  },
-  {
-   "closed_utc": "2026-07-27 14:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": 0.81
+   "cum_R": 2.95
   },
   {
    "closed_utc": "2026-07-27 14:00",
@@ -35,7 +33,15 @@
    "side": "long",
    "net_R": -1.12,
    "exit": "stop",
-   "cum_R": -0.31
+   "cum_R": 1.83
+  },
+  {
+   "closed_utc": "2026-07-27 14:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.09,
+   "exit": "stop",
+   "cum_R": 0.74
   },
   {
    "closed_utc": "2026-07-27 21:00",
@@ -43,7 +49,7 @@
    "side": "long",
    "net_R": -1.07,
    "exit": "stop",
-   "cum_R": -1.38
+   "cum_R": -0.33
   },
   {
    "closed_utc": "2026-07-28 13:00",
@@ -51,15 +57,7 @@
    "side": "short",
    "net_R": 2.92,
    "exit": "target hit",
-   "cum_R": 1.54
-  },
-  {
-   "closed_utc": "2026-07-28 15:00",
-   "asset": "XPL",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": 0.49
+   "cum_R": 2.59
   },
   {
    "closed_utc": "2026-07-29 01:00",
@@ -67,23 +65,7 @@
    "side": "short",
    "net_R": 2.95,
    "exit": "target hit",
-   "cum_R": 3.44
-  },
-  {
-   "closed_utc": "2026-07-30 14:00",
-   "asset": "PUMPFUN",
-   "side": "short",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": 2.41
-  },
-  {
-   "closed_utc": "2026-07-30 16:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": 1.36
+   "cum_R": 5.54
   },
   {
    "closed_utc": "2026-07-31 17:00",
@@ -91,15 +73,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": 0.3
-  },
-  {
-   "closed_utc": "2026-08-01 02:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": -0.74
+   "cum_R": 4.48
   },
   {
    "closed_utc": "2026-08-01 15:00",
@@ -107,15 +81,7 @@
    "side": "short",
    "net_R": 2.25,
    "exit": "time stop",
-   "cum_R": 1.51
-  },
-  {
-   "closed_utc": "2026-08-01 18:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": 0.45
+   "cum_R": 6.73
   },
   {
    "closed_utc": "2026-08-01 23:00",
@@ -123,7 +89,7 @@
    "side": "short",
    "net_R": 1.18,
    "exit": "time stop",
-   "cum_R": 1.63
+   "cum_R": 7.91
   },
   {
    "closed_utc": "2026-08-02 05:00",
@@ -131,15 +97,7 @@
    "side": "short",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": 0.58
-  },
-  {
-   "closed_utc": "2026-08-02 06:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": 2.94,
-   "exit": "target hit",
-   "cum_R": 3.52
+   "cum_R": 6.86
   },
   {
    "closed_utc": "2026-08-02 16:00",
@@ -147,7 +105,7 @@
    "side": "long",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": 2.46
+   "cum_R": 5.8
   },
   {
    "closed_utc": "2026-08-02 21:00",
@@ -155,7 +113,7 @@
    "side": "short",
    "net_R": -1.08,
    "exit": "stop",
-   "cum_R": 1.38
+   "cum_R": 4.72
   },
   {
    "closed_utc": "2026-08-03 14:00",
@@ -163,15 +121,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": 0.32
-  },
-  {
-   "closed_utc": "2026-08-03 17:00",
-   "asset": "XPL",
-   "side": "short",
-   "net_R": -0.07,
-   "exit": "time stop",
-   "cum_R": 0.25
+   "cum_R": 3.66
   },
   {
    "closed_utc": "2026-08-04 08:00",
@@ -179,23 +129,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -0.81
-  },
-  {
-   "closed_utc": "2026-08-04 19:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": 2.15
-  },
-  {
-   "closed_utc": "2026-08-06 09:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": 1.1
+   "cum_R": 2.6
   },
   {
    "closed_utc": "2026-08-06 09:00",
@@ -203,7 +137,15 @@
    "side": "long",
    "net_R": -1.07,
    "exit": "stop",
-   "cum_R": 0.03
+   "cum_R": 1.53
+  },
+  {
+   "closed_utc": "2026-08-06 09:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.05,
+   "exit": "stop",
+   "cum_R": 0.48
   },
   {
    "closed_utc": "2026-08-06 15:00",
@@ -211,23 +153,7 @@
    "side": "long",
    "net_R": -1.03,
    "exit": "stop",
-   "cum_R": -1.0
-  },
-  {
-   "closed_utc": "2026-08-06 16:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -2.09
-  },
-  {
-   "closed_utc": "2026-08-07 05:00",
-   "asset": "XPL",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -3.15
+   "cum_R": -0.55
   },
   {
    "closed_utc": "2026-08-07 12:00",
@@ -235,7 +161,7 @@
    "side": "short",
    "net_R": -1.08,
    "exit": "stop",
-   "cum_R": -4.23
+   "cum_R": -1.63
   },
   {
    "closed_utc": "2026-08-08 01:00",
@@ -243,7 +169,7 @@
    "side": "long",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -5.28
+   "cum_R": -2.68
   },
   {
    "closed_utc": "2026-08-08 03:00",
@@ -251,7 +177,7 @@
    "side": "short",
    "net_R": -1.09,
    "exit": "stop",
-   "cum_R": -6.37
+   "cum_R": -3.77
   },
   {
    "closed_utc": "2026-08-09 12:00",
@@ -259,15 +185,7 @@
    "side": "long",
    "net_R": 2.95,
    "exit": "target hit",
-   "cum_R": -3.42
-  },
-  {
-   "closed_utc": "2026-08-09 13:00",
-   "asset": "WLD",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -4.47
+   "cum_R": -0.82
   },
   {
    "closed_utc": "2026-08-09 15:00",
@@ -275,31 +193,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -5.53
-  },
-  {
-   "closed_utc": "2026-08-09 22:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": -6.6
-  },
-  {
-   "closed_utc": "2026-08-09 22:00",
-   "asset": "WIF",
-   "side": "long",
-   "net_R": -1.1,
-   "exit": "stop",
-   "cum_R": -7.7
-  },
-  {
-   "closed_utc": "2026-08-09 23:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -8.79
+   "cum_R": -1.88
   },
   {
    "closed_utc": "2026-08-09 23:00",
@@ -307,7 +201,7 @@
    "side": "long",
    "net_R": -1.07,
    "exit": "stop",
-   "cum_R": -9.86
+   "cum_R": -2.95
   },
   {
    "closed_utc": "2026-08-10 07:00",
@@ -315,7 +209,7 @@
    "side": "short",
    "net_R": -1.08,
    "exit": "stop",
-   "cum_R": -10.94
+   "cum_R": -4.03
   },
   {
    "closed_utc": "2026-08-10 07:00",
@@ -323,7 +217,7 @@
    "side": "short",
    "net_R": -1.12,
    "exit": "stop",
-   "cum_R": -12.06
+   "cum_R": -5.15
   },
   {
    "closed_utc": "2026-08-10 15:00",
@@ -331,7 +225,7 @@
    "side": "long",
    "net_R": -1.07,
    "exit": "stop",
-   "cum_R": -13.13
+   "cum_R": -6.22
   },
   {
    "closed_utc": "2026-08-11 13:00",
@@ -339,7 +233,7 @@
    "side": "long",
    "net_R": -1.08,
    "exit": "stop",
-   "cum_R": -14.21
+   "cum_R": -7.3
   },
   {
    "closed_utc": "2026-08-11 14:00",
@@ -347,15 +241,7 @@
    "side": "long",
    "net_R": -1.1,
    "exit": "stop",
-   "cum_R": -15.31
-  },
-  {
-   "closed_utc": "2026-08-11 20:00",
-   "asset": "XPL",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -16.37
+   "cum_R": -8.4
   },
   {
    "closed_utc": "2026-08-11 21:00",
@@ -363,7 +249,7 @@
    "side": "short",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -17.42
+   "cum_R": -9.45
   },
   {
    "closed_utc": "2026-08-11 22:00",
@@ -371,7 +257,7 @@
    "side": "short",
    "net_R": -1.08,
    "exit": "stop",
-   "cum_R": -18.5
+   "cum_R": -10.53
   },
   {
    "closed_utc": "2026-08-12 06:00",
@@ -379,7 +265,7 @@
    "side": "short",
    "net_R": -1.09,
    "exit": "stop",
-   "cum_R": -19.59
+   "cum_R": -11.62
   },
   {
    "closed_utc": "2026-08-13 04:00",
@@ -387,7 +273,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -20.65
+   "cum_R": -12.68
   },
   {
    "closed_utc": "2026-08-13 05:00",
@@ -395,7 +281,7 @@
    "side": "short",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -21.7
+   "cum_R": -13.73
   },
   {
    "closed_utc": "2026-08-14 01:00",
@@ -403,7 +289,7 @@
    "side": "long",
    "net_R": 2.96,
    "exit": "target hit",
-   "cum_R": -18.74
+   "cum_R": -10.77
   },
   {
    "closed_utc": "2026-08-14 03:00",
@@ -411,7 +297,7 @@
    "side": "long",
    "net_R": -1.08,
    "exit": "stop",
-   "cum_R": -19.82
+   "cum_R": -11.85
   },
   {
    "closed_utc": "2026-08-14 10:00",
@@ -419,7 +305,7 @@
    "side": "long",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -20.87
+   "cum_R": -12.9
   },
   {
    "closed_utc": "2026-08-14 14:00",
@@ -427,7 +313,7 @@
    "side": "short",
    "net_R": 2.91,
    "exit": "target hit",
-   "cum_R": -17.96
+   "cum_R": -9.99
   },
   {
    "closed_utc": "2026-08-14 17:00",
@@ -435,7 +321,7 @@
    "side": "short",
    "net_R": -1.1,
    "exit": "stop",
-   "cum_R": -19.06
+   "cum_R": -11.09
   },
   {
    "closed_utc": "2026-08-14 22:00",
@@ -443,7 +329,7 @@
    "side": "long",
    "net_R": -1.07,
    "exit": "stop",
-   "cum_R": -20.13
+   "cum_R": -12.16
   },
   {
    "closed_utc": "2026-08-15 01:00",
@@ -451,7 +337,7 @@
    "side": "short",
    "net_R": -1.1,
    "exit": "stop",
-   "cum_R": -21.23
+   "cum_R": -13.26
   },
   {
    "closed_utc": "2026-08-15 02:00",
@@ -459,15 +345,7 @@
    "side": "short",
    "net_R": -1.09,
    "exit": "stop",
-   "cum_R": -22.32
-  },
-  {
-   "closed_utc": "2026-08-15 03:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": 0.97,
-   "exit": "time stop",
-   "cum_R": -21.35
+   "cum_R": -14.35
   },
   {
    "closed_utc": "2026-08-16 15:00",
@@ -475,7 +353,7 @@
    "side": "short",
    "net_R": -1.13,
    "exit": "stop",
-   "cum_R": -22.48
+   "cum_R": -15.48
   },
   {
    "closed_utc": "2026-08-16 21:00",
@@ -483,7 +361,7 @@
    "side": "long",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -23.54
+   "cum_R": -16.54
   },
   {
    "closed_utc": "2026-08-16 21:00",
@@ -491,7 +369,7 @@
    "side": "short",
    "net_R": 2.85,
    "exit": "target hit",
-   "cum_R": -20.69
+   "cum_R": -13.69
   },
   {
    "closed_utc": "2026-08-17 01:00",
@@ -499,7 +377,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -21.75
+   "cum_R": -14.75
   },
   {
    "closed_utc": "2026-08-17 01:00",
@@ -507,15 +385,7 @@
    "side": "short",
    "net_R": -1.12,
    "exit": "stop",
-   "cum_R": -22.87
-  },
-  {
-   "closed_utc": "2026-08-17 05:00",
-   "asset": "XPL",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -23.93
+   "cum_R": -15.87
   },
   {
    "closed_utc": "2026-08-17 10:00",
@@ -523,7 +393,7 @@
    "side": "long",
    "net_R": 2.89,
    "exit": "target hit",
-   "cum_R": -21.04
+   "cum_R": -12.98
   },
   {
    "closed_utc": "2026-08-17 19:00",
@@ -531,7 +401,7 @@
    "side": "long",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -22.1
+   "cum_R": -14.04
   },
   {
    "closed_utc": "2026-08-17 20:00",
@@ -539,7 +409,7 @@
    "side": "long",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -23.15
+   "cum_R": -15.09
   },
   {
    "closed_utc": "2026-08-18 07:00",
@@ -547,7 +417,7 @@
    "side": "short",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": -24.21
+   "cum_R": -16.15
   },
   {
    "closed_utc": "2026-08-18 14:00",
@@ -555,7 +425,7 @@
    "side": "short",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -25.26
+   "cum_R": -17.2
   },
   {
    "closed_utc": "2026-08-18 14:00",
@@ -563,7 +433,7 @@
    "side": "short",
    "net_R": -1.09,
    "exit": "stop",
-   "cum_R": -26.35
+   "cum_R": -18.29
   },
   {
    "closed_utc": "2026-08-18 16:00",
@@ -571,7 +441,7 @@
    "side": "long",
    "net_R": -1.09,
    "exit": "stop",
-   "cum_R": -27.44
+   "cum_R": -19.38
   },
   {
    "closed_utc": "2026-08-19 15:00",
@@ -579,15 +449,7 @@
    "side": "short",
    "net_R": -1.04,
    "exit": "stop",
-   "cum_R": -28.48
-  },
-  {
-   "closed_utc": "2026-08-19 19:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": 2.92,
-   "exit": "target hit",
-   "cum_R": -25.56
+   "cum_R": -20.42
   },
   {
    "closed_utc": "2026-08-19 20:00",
@@ -595,7 +457,7 @@
    "side": "long",
    "net_R": 2.88,
    "exit": "target hit",
-   "cum_R": -22.68
+   "cum_R": -17.54
   },
   {
    "closed_utc": "2026-08-19 21:00",
@@ -603,7 +465,7 @@
    "side": "long",
    "net_R": 2.91,
    "exit": "target hit",
-   "cum_R": -19.77
+   "cum_R": -14.63
   },
   {
    "closed_utc": "2026-08-20 02:00",
@@ -611,15 +473,7 @@
    "side": "long",
    "net_R": 2.96,
    "exit": "target hit",
-   "cum_R": -16.81
-  },
-  {
-   "closed_utc": "2026-08-20 04:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": 2.92,
-   "exit": "target hit",
-   "cum_R": -13.89
+   "cum_R": -11.67
   },
   {
    "closed_utc": "2026-08-20 09:00",
@@ -627,23 +481,7 @@
    "side": "long",
    "net_R": 2.95,
    "exit": "target hit",
-   "cum_R": -10.94
-  },
-  {
-   "closed_utc": "2026-08-20 10:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": 2.95,
-   "exit": "target hit",
-   "cum_R": -7.99
-  },
-  {
-   "closed_utc": "2026-08-20 12:00",
-   "asset": "WIF",
-   "side": "long",
-   "net_R": 2.94,
-   "exit": "target hit",
-   "cum_R": -5.05
+   "cum_R": -8.72
   },
   {
    "closed_utc": "2026-08-20 15:00",
@@ -651,7 +489,7 @@
    "side": "long",
    "net_R": 2.94,
    "exit": "target hit",
-   "cum_R": -2.11
+   "cum_R": -5.78
   },
   {
    "closed_utc": "2026-08-21 01:00",
@@ -659,7 +497,7 @@
    "side": "long",
    "net_R": 2.96,
    "exit": "target hit",
-   "cum_R": 0.85
+   "cum_R": -2.82
   },
   {
    "closed_utc": "2026-08-21 08:00",
@@ -667,7 +505,7 @@
    "side": "long",
    "net_R": 2.95,
    "exit": "target hit",
-   "cum_R": 3.8
+   "cum_R": 0.13
   },
   {
    "closed_utc": "2026-08-21 23:00",
@@ -675,7 +513,7 @@
    "side": "long",
    "net_R": 2.97,
    "exit": "target hit",
-   "cum_R": 6.77
+   "cum_R": 3.1
   },
   {
    "closed_utc": "2026-08-22 02:00",
@@ -683,7 +521,7 @@
    "side": "long",
    "net_R": 2.96,
    "exit": "target hit",
-   "cum_R": 9.73
+   "cum_R": 6.06
   },
   {
    "closed_utc": "2026-08-22 04:00",
@@ -691,7 +529,7 @@
    "side": "long",
    "net_R": 2.97,
    "exit": "target hit",
-   "cum_R": 12.7
+   "cum_R": 9.03
   },
   {
    "closed_utc": "2026-08-22 05:00",
@@ -699,15 +537,7 @@
    "side": "long",
    "net_R": -1.03,
    "exit": "stop",
-   "cum_R": 11.67
-  },
-  {
-   "closed_utc": "2026-08-22 05:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": -1.02,
-   "exit": "stop",
-   "cum_R": 10.65
+   "cum_R": 8.0
   },
   {
    "closed_utc": "2026-08-22 05:00",
@@ -715,7 +545,7 @@
    "side": "long",
    "net_R": -1.03,
    "exit": "stop",
-   "cum_R": 9.62
+   "cum_R": 6.97
   },
   {
    "closed_utc": "2026-08-22 06:00",
@@ -723,7 +553,7 @@
    "side": "long",
    "net_R": -1.03,
    "exit": "stop",
-   "cum_R": 8.59
+   "cum_R": 5.94
   }
  ]
 }
