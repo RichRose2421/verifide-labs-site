@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-08-22T05:45:21+00:00",
+ "generated_utc": "2026-08-22T06:15:31+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 86,
- "total_R": 12.7,
- "win_rate": 0.314,
+ "n_closed": 89,
+ "total_R": 9.62,
+ "win_rate": 0.303,
  "trades": [
   {
    "closed_utc": "2026-07-27 09:00",
@@ -692,6 +692,30 @@
    "net_R": 2.97,
    "exit": "target hit",
    "cum_R": 12.7
+  },
+  {
+   "closed_utc": "2026-08-22 05:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.03,
+   "exit": "stop",
+   "cum_R": 11.67
+  },
+  {
+   "closed_utc": "2026-08-22 05:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.02,
+   "exit": "stop",
+   "cum_R": 10.65
+  },
+  {
+   "closed_utc": "2026-08-22 05:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": -1.03,
+   "exit": "stop",
+   "cum_R": 9.62
   }
  ]
 }
