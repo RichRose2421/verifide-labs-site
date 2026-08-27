@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-27T22:47:48+00:00",
+ "generated_utc": "2026-08-27T23:18:03+00:00",
  "preregistrations": [
   {
    "file": "PREREG-2026-08-03.md",
@@ -48,6 +48,18 @@
   {
    "file": "PREREG-2026-08-28.md",
    "sha256": "e1a29120653a36ccc5f0a3a547452ccb7f9887ec35c260c5689e3c010c774dd8"
+  },
+  {
+   "file": "PREREG-2026-08-28b.md",
+   "sha256": "f46c0ec64caa6dcab8ca6be2cc805cd7f203d3647113a8d097c336d97c351ddd"
+  },
+  {
+   "file": "PREREG-2026-08-28c.md",
+   "sha256": "3e22ee70205e840e6c0ab6f607d7ebeb597b1cdadf5fdd03d33695d4cfb2ec3e"
+  },
+  {
+   "file": "PREREG-2026-08-28d.md",
+   "sha256": "610469353d803b35148ff8dcb4ef7cf7ba1cc1b4ec6f41e25f1ace921c0ce2c4"
   }
  ],
  "note": "Every test is pre-registered and hashed before code touches data. Candidates tested to date and kill decisions are summarized in the Kill List."
