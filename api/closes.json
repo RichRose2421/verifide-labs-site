@@ -1,23 +1,23 @@
 {
- "generated_utc": "2026-08-30T17:50:03+00:00",
+ "generated_utc": "2026-08-30T18:20:17+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
  "n_closed": 78,
- "total_R": 1.93,
+ "total_R": -2.05,
  "cap_concurrent": 4,
  "as_recorded_uncapped": {
-  "n": 104,
-  "total_R": 5.46,
-  "avg_R": 0.053,
-  "win_rate": 0.298
+  "n": 105,
+  "total_R": 4.44,
+  "avg_R": 0.042,
+  "win_rate": 0.295
  },
  "rejected_by_cap": {
-  "n": 26,
-  "total_R": 3.51,
-  "avg_R": 0.135,
-  "win_rate": 0.308
+  "n": 27,
+  "total_R": 6.47,
+  "avg_R": 0.24,
+  "win_rate": 0.333
  },
  "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
- "win_rate": 0.295,
+ "win_rate": 0.282,
  "trades": [
   {
    "closed_utc": "2026-07-27 13:00",
@@ -604,20 +604,12 @@
    "cum_R": 0.96
   },
   {
-   "closed_utc": "2026-08-27 16:00",
-   "asset": "WIF",
-   "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": 3.92
-  },
-  {
    "closed_utc": "2026-08-28 02:00",
    "asset": "PEPE",
    "side": "long",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": 2.87
+   "cum_R": -0.09
   },
   {
    "closed_utc": "2026-08-28 04:00",
@@ -625,7 +617,7 @@
    "side": "long",
    "net_R": -1.04,
    "exit": "stop",
-   "cum_R": 1.83
+   "cum_R": -1.13
   },
   {
    "closed_utc": "2026-08-29 18:00",
@@ -633,7 +625,7 @@
    "side": "short",
    "net_R": 1.16,
    "exit": "time stop",
-   "cum_R": 2.99
+   "cum_R": 0.03
   },
   {
    "closed_utc": "2026-08-30 08:00",
@@ -641,7 +633,15 @@
    "side": "long",
    "net_R": -1.06,
    "exit": "stop",
-   "cum_R": 1.93
+   "cum_R": -1.03
+  },
+  {
+   "closed_utc": "2026-08-30 17:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.02,
+   "exit": "stop",
+   "cum_R": -2.05
   }
  ]
 }
