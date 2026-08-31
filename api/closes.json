@@ -1,14 +1,14 @@
 {
- "generated_utc": "2026-08-31T16:31:09+00:00",
+ "generated_utc": "2026-08-31T17:01:23+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 82,
- "total_R": -6.29,
+ "n_closed": 83,
+ "total_R": -7.33,
  "cap_concurrent": 4,
  "as_recorded_uncapped": {
-  "n": 109,
-  "total_R": 0.21,
-  "avg_R": 0.002,
-  "win_rate": 0.284
+  "n": 110,
+  "total_R": -0.84,
+  "avg_R": -0.008,
+  "win_rate": 0.282
  },
  "rejected_by_cap": {
   "n": 27,
@@ -17,7 +17,7 @@
   "win_rate": 0.333
  },
  "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
- "win_rate": 0.268,
+ "win_rate": 0.265,
  "trades": [
   {
    "closed_utc": "2026-07-27 13:00",
@@ -674,6 +674,14 @@
    "net_R": -1.04,
    "exit": "stop",
    "cum_R": -6.29
+  },
+  {
+   "closed_utc": "2026-08-31 16:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": -1.04,
+   "exit": "stop",
+   "cum_R": -7.33
   }
  ]
 }
