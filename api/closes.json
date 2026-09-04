@@ -1,20 +1,20 @@
 {
- "generated_utc": "2026-09-04T14:48:58+00:00",
+ "generated_utc": "2026-09-04T15:19:18+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
  "n_closed": 92,
- "total_R": -8.73,
+ "total_R": -8.72,
  "cap_concurrent": 4,
  "as_recorded_uncapped": {
-  "n": 122,
-  "total_R": -5.36,
-  "avg_R": -0.044,
-  "win_rate": 0.27
+  "n": 123,
+  "total_R": -6.4,
+  "avg_R": -0.052,
+  "win_rate": 0.268
  },
  "rejected_by_cap": {
-  "n": 30,
-  "total_R": 3.34,
-  "avg_R": 0.111,
-  "win_rate": 0.3
+  "n": 31,
+  "total_R": 2.29,
+  "avg_R": 0.074,
+  "win_rate": 0.29
  },
  "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
  "win_rate": 0.261,
@@ -748,12 +748,12 @@
    "cum_R": -7.68
   },
   {
-   "closed_utc": "2026-09-04 12:00",
-   "asset": "WIF",
+   "closed_utc": "2026-09-04 14:00",
+   "asset": "FARTCOIN",
    "side": "long",
-   "net_R": -1.05,
+   "net_R": -1.04,
    "exit": "stop",
-   "cum_R": -8.73
+   "cum_R": -8.72
   }
  ]
 }
