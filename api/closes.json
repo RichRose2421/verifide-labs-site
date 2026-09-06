@@ -1,23 +1,23 @@
 {
- "generated_utc": "2026-09-06T00:38:39+00:00",
+ "generated_utc": "2026-09-06T01:08:59+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
  "n_closed": 95,
- "total_R": -11.85,
+ "total_R": -7.85,
  "cap_concurrent": 4,
  "as_recorded_uncapped": {
-  "n": 126,
-  "total_R": -9.53,
-  "avg_R": -0.076,
-  "win_rate": 0.262
+  "n": 127,
+  "total_R": -6.57,
+  "avg_R": -0.052,
+  "win_rate": 0.268
  },
  "rejected_by_cap": {
-  "n": 31,
-  "total_R": 2.29,
-  "avg_R": 0.074,
-  "win_rate": 0.29
+  "n": 32,
+  "total_R": 1.25,
+  "avg_R": 0.039,
+  "win_rate": 0.281
  },
  "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
- "win_rate": 0.253,
+ "win_rate": 0.263,
  "trades": [
   {
    "closed_utc": "2026-07-27 13:00",
@@ -748,20 +748,12 @@
    "cum_R": -7.68
   },
   {
-   "closed_utc": "2026-09-04 14:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": -8.72
-  },
-  {
    "closed_utc": "2026-09-05 01:00",
    "asset": "WLD",
    "side": "short",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -9.77
+   "cum_R": -8.73
   },
   {
    "closed_utc": "2026-09-05 08:00",
@@ -769,7 +761,7 @@
    "side": "short",
    "net_R": -1.04,
    "exit": "stop",
-   "cum_R": -10.81
+   "cum_R": -9.77
   },
   {
    "closed_utc": "2026-09-05 17:00",
@@ -777,7 +769,15 @@
    "side": "short",
    "net_R": -1.04,
    "exit": "stop",
-   "cum_R": -11.85
+   "cum_R": -10.81
+  },
+  {
+   "closed_utc": "2026-09-06 00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": 2.96,
+   "exit": "target hit",
+   "cum_R": -7.85
   }
  ]
 }
