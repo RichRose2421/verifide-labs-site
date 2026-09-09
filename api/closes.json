@@ -1,14 +1,14 @@
 {
- "generated_utc": "2026-09-09T21:36:23+00:00",
+ "generated_utc": "2026-09-09T22:06:40+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 98,
- "total_R": -7.03,
+ "n_closed": 99,
+ "total_R": -8.06,
  "cap_concurrent": 4,
  "as_recorded_uncapped": {
-  "n": 137,
-  "total_R": -9.1,
-  "avg_R": -0.066,
-  "win_rate": 0.263
+  "n": 138,
+  "total_R": -10.12,
+  "avg_R": -0.073,
+  "win_rate": 0.261
  },
  "rejected_by_cap": {
   "n": 39,
@@ -17,7 +17,7 @@
   "win_rate": 0.256
  },
  "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
- "win_rate": 0.265,
+ "win_rate": 0.263,
  "trades": [
   {
    "closed_utc": "2026-07-27 13:00",
@@ -802,6 +802,14 @@
    "net_R": -1.05,
    "exit": "stop",
    "cum_R": -7.03
+  },
+  {
+   "closed_utc": "2026-09-09 21:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.03,
+   "exit": "stop",
+   "cum_R": -8.06
   }
  ]
 }
