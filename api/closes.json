@@ -1,815 +1,847 @@
 {
- "generated_utc": "2026-09-10T22:21:36+00:00",
- "book": "Bybit \u00b7 8 execution assets \u00b7 paper (live cutover will be announced)",
- "n_closed": 99,
- "total_R": -8.06,
- "cap_concurrent": 4,
- "as_recorded_uncapped": {
-  "n": 139,
-  "total_R": -7.19,
-  "avg_R": -0.052,
-  "win_rate": 0.266
- },
- "rejected_by_cap": {
-  "n": 40,
-  "total_R": 0.84,
-  "avg_R": 0.021,
-  "win_rate": 0.275
- },
- "disclosure": "Published book applies the max-4 concurrent-position rule. Until 2026-08-22 this site published the uncapped signal recorder by mistake; both figures are shown.",
- "win_rate": 0.263,
+ "generated_utc": "2026-09-10T22:51:54+00:00",
+ "book": "Bybit \u00b7 8 execution assets \u00b7 paper account \u00b7 every trade as filled",
+ "n_closed": 104,
+ "total_R": -7.29,
+ "source": "executor fill log \u2014 real orders, real fills, slippage and fees included",
+ "concurrency": "the engine holds at most 4 positions; the limit is enforced by the engine, not applied afterwards",
+ "worst_drawdown_R": -25.26,
+ "worst_losing_streak": 13,
+ "open_positions_not_shown": 3,
+ "disclosure": "From 2026-09-10 this record is the execution engine's own fill log. Before that date it was a model of the engine: the uncapped signal recorder with a max-4-concurrent rule replayed over it (ADR-011). The model disagreed with the engine by 6.3R across 11 trades and excluded real trades the engine took. The restated figure is better than the modelled one, which is why it is spelled out here. Earlier published numbers are kept in the archive, corrected in place, never deleted.",
+ "win_rate": 0.24,
  "trades": [
   {
-   "closed_utc": "2026-07-27 13:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": 2.95,
-   "exit": "target hit",
-   "cum_R": 2.95
-  },
-  {
-   "closed_utc": "2026-07-27 14:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": -1.12,
-   "exit": "stop",
-   "cum_R": 1.83
-  },
-  {
-   "closed_utc": "2026-07-27 14:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": 0.74
-  },
-  {
-   "closed_utc": "2026-07-27 21:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": -0.33
-  },
-  {
-   "closed_utc": "2026-07-28 13:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": 2.92,
-   "exit": "target hit",
-   "cum_R": 2.59
-  },
-  {
-   "closed_utc": "2026-07-29 01:00",
-   "asset": "WLD",
-   "side": "short",
-   "net_R": 2.95,
-   "exit": "target hit",
-   "cum_R": 5.54
-  },
-  {
-   "closed_utc": "2026-07-31 17:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": 4.48
-  },
-  {
-   "closed_utc": "2026-08-01 15:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": 2.25,
-   "exit": "time stop",
-   "cum_R": 6.73
-  },
-  {
-   "closed_utc": "2026-08-01 23:00",
+   "closed_utc": "2026-07-30T14:01:00.408006+00:00",
    "asset": "ENA",
    "side": "short",
-   "net_R": 1.18,
-   "exit": "time stop",
-   "cum_R": 7.91
-  },
-  {
-   "closed_utc": "2026-08-02 05:00",
-   "asset": "WLD",
-   "side": "short",
-   "net_R": -1.05,
+   "net_R": -1.0,
    "exit": "stop",
-   "cum_R": 6.86
+   "cum_R": -1.0
   },
   {
-   "closed_utc": "2026-08-02 16:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": 5.8
-  },
-  {
-   "closed_utc": "2026-08-02 21:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.08,
-   "exit": "stop",
-   "cum_R": 4.72
-  },
-  {
-   "closed_utc": "2026-08-03 14:00",
-   "asset": "WLD",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": 3.66
-  },
-  {
-   "closed_utc": "2026-08-04 08:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": 2.6
-  },
-  {
-   "closed_utc": "2026-08-06 09:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": 1.53
-  },
-  {
-   "closed_utc": "2026-08-06 09:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": 0.48
-  },
-  {
-   "closed_utc": "2026-08-06 15:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": -0.55
-  },
-  {
-   "closed_utc": "2026-08-07 12:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": -1.08,
-   "exit": "stop",
-   "cum_R": -1.63
-  },
-  {
-   "closed_utc": "2026-08-08 01:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -2.68
-  },
-  {
-   "closed_utc": "2026-08-08 03:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -3.77
-  },
-  {
-   "closed_utc": "2026-08-09 12:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": 2.95,
-   "exit": "target hit",
-   "cum_R": -0.82
-  },
-  {
-   "closed_utc": "2026-08-09 15:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -1.88
-  },
-  {
-   "closed_utc": "2026-08-09 23:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": -2.95
-  },
-  {
-   "closed_utc": "2026-08-10 07:00",
-   "asset": "ENA",
-   "side": "short",
-   "net_R": -1.08,
-   "exit": "stop",
-   "cum_R": -4.03
-  },
-  {
-   "closed_utc": "2026-08-10 07:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": -1.12,
-   "exit": "stop",
-   "cum_R": -5.15
-  },
-  {
-   "closed_utc": "2026-08-10 15:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": -6.22
-  },
-  {
-   "closed_utc": "2026-08-11 13:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": -1.08,
-   "exit": "stop",
-   "cum_R": -7.3
-  },
-  {
-   "closed_utc": "2026-08-11 14:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": -1.1,
-   "exit": "stop",
-   "cum_R": -8.4
-  },
-  {
-   "closed_utc": "2026-08-11 21:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -9.45
-  },
-  {
-   "closed_utc": "2026-08-11 22:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": -1.08,
-   "exit": "stop",
-   "cum_R": -10.53
-  },
-  {
-   "closed_utc": "2026-08-12 06:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -11.62
-  },
-  {
-   "closed_utc": "2026-08-13 04:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -12.68
-  },
-  {
-   "closed_utc": "2026-08-13 05:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -13.73
-  },
-  {
-   "closed_utc": "2026-08-14 01:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": -10.77
-  },
-  {
-   "closed_utc": "2026-08-14 03:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": -1.08,
-   "exit": "stop",
-   "cum_R": -11.85
-  },
-  {
-   "closed_utc": "2026-08-14 10:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -12.9
-  },
-  {
-   "closed_utc": "2026-08-14 14:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": 2.91,
-   "exit": "target hit",
-   "cum_R": -9.99
-  },
-  {
-   "closed_utc": "2026-08-14 17:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.1,
-   "exit": "stop",
-   "cum_R": -11.09
-  },
-  {
-   "closed_utc": "2026-08-14 22:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": -12.16
-  },
-  {
-   "closed_utc": "2026-08-15 01:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": -1.1,
-   "exit": "stop",
-   "cum_R": -13.26
-  },
-  {
-   "closed_utc": "2026-08-15 02:00",
-   "asset": "ENA",
-   "side": "short",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -14.35
-  },
-  {
-   "closed_utc": "2026-08-16 15:00",
-   "asset": "ENA",
-   "side": "short",
-   "net_R": -1.13,
-   "exit": "stop",
-   "cum_R": -15.48
-  },
-  {
-   "closed_utc": "2026-08-16 21:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": 2.85,
-   "exit": "target hit",
-   "cum_R": -12.63
-  },
-  {
-   "closed_utc": "2026-08-16 21:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -13.69
-  },
-  {
-   "closed_utc": "2026-08-17 01:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -14.75
-  },
-  {
-   "closed_utc": "2026-08-17 01:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.12,
-   "exit": "stop",
-   "cum_R": -15.87
-  },
-  {
-   "closed_utc": "2026-08-17 10:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": 2.89,
-   "exit": "target hit",
-   "cum_R": -12.98
-  },
-  {
-   "closed_utc": "2026-08-17 19:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -14.04
-  },
-  {
-   "closed_utc": "2026-08-17 20:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -15.09
-  },
-  {
-   "closed_utc": "2026-08-18 07:00",
-   "asset": "XPL",
-   "side": "short",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -16.15
-  },
-  {
-   "closed_utc": "2026-08-18 14:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -17.2
-  },
-  {
-   "closed_utc": "2026-08-18 14:00",
-   "asset": "WIF",
-   "side": "short",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -18.29
-  },
-  {
-   "closed_utc": "2026-08-18 16:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": -1.09,
-   "exit": "stop",
-   "cum_R": -19.38
-  },
-  {
-   "closed_utc": "2026-08-19 15:00",
-   "asset": "WLD",
-   "side": "short",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": -20.42
-  },
-  {
-   "closed_utc": "2026-08-19 20:00",
-   "asset": "WIF",
-   "side": "long",
-   "net_R": 2.88,
-   "exit": "target hit",
-   "cum_R": -17.54
-  },
-  {
-   "closed_utc": "2026-08-19 21:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": 2.91,
-   "exit": "target hit",
-   "cum_R": -14.63
-  },
-  {
-   "closed_utc": "2026-08-20 02:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": -11.67
-  },
-  {
-   "closed_utc": "2026-08-20 09:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": 2.95,
-   "exit": "target hit",
-   "cum_R": -8.72
-  },
-  {
-   "closed_utc": "2026-08-20 15:00",
-   "asset": "FARTCOIN",
-   "side": "long",
-   "net_R": 2.94,
-   "exit": "target hit",
-   "cum_R": -5.78
-  },
-  {
-   "closed_utc": "2026-08-21 01:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": -2.82
-  },
-  {
-   "closed_utc": "2026-08-21 08:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": 2.95,
-   "exit": "target hit",
-   "cum_R": 0.13
-  },
-  {
-   "closed_utc": "2026-08-21 23:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": 2.97,
-   "exit": "target hit",
-   "cum_R": 3.1
-  },
-  {
-   "closed_utc": "2026-08-22 02:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": 6.06
-  },
-  {
-   "closed_utc": "2026-08-22 05:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": 5.03
-  },
-  {
-   "closed_utc": "2026-08-22 05:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": 4.0
-  },
-  {
-   "closed_utc": "2026-08-22 06:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": 2.97
-  },
-  {
-   "closed_utc": "2026-08-23 09:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": 2.98,
-   "exit": "target hit",
-   "cum_R": 5.95
-  },
-  {
-   "closed_utc": "2026-08-23 21:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": -1.02,
-   "exit": "stop",
-   "cum_R": 4.93
-  },
-  {
-   "closed_utc": "2026-08-24 00:00",
+   "closed_utc": "2026-07-31T15:01:00.285512+00:00",
    "asset": "ENA",
    "side": "long",
    "net_R": -1.02,
    "exit": "stop",
-   "cum_R": 3.91
+   "cum_R": -2.02
   },
   {
-   "closed_utc": "2026-08-24 01:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": 2.88
-  },
-  {
-   "closed_utc": "2026-08-25 17:00",
-   "asset": "WIF",
-   "side": "long",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": 1.84
-  },
-  {
-   "closed_utc": "2026-08-27 07:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": 0.14,
-   "exit": "time stop",
-   "cum_R": 1.98
-  },
-  {
-   "closed_utc": "2026-08-27 16:00",
-   "asset": "ENA",
-   "side": "short",
-   "net_R": -1.02,
-   "exit": "stop",
-   "cum_R": 0.96
-  },
-  {
-   "closed_utc": "2026-08-28 02:00",
+   "closed_utc": "2026-07-31T18:01:04.401136+00:00",
    "asset": "PEPE",
-   "side": "long",
-   "net_R": -1.05,
+   "side": "short",
+   "net_R": -1.0,
    "exit": "stop",
-   "cum_R": -0.09
+   "cum_R": -3.02
   },
   {
-   "closed_utc": "2026-08-28 04:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": -1.13
-  },
-  {
-   "closed_utc": "2026-08-29 18:00",
+   "closed_utc": "2026-08-01T06:01:05.333495+00:00",
    "asset": "XPL",
    "side": "short",
-   "net_R": 1.16,
-   "exit": "time stop",
-   "cum_R": 0.03
-  },
-  {
-   "closed_utc": "2026-08-30 08:00",
-   "asset": "WLD",
-   "side": "long",
-   "net_R": -1.06,
+   "net_R": -1.0,
    "exit": "stop",
-   "cum_R": -1.03
+   "cum_R": -4.02
   },
   {
-   "closed_utc": "2026-08-30 17:00",
+   "closed_utc": "2026-08-01T19:01:03.728386+00:00",
    "asset": "FARTCOIN",
    "side": "long",
-   "net_R": -1.02,
+   "net_R": -1.0,
    "exit": "stop",
-   "cum_R": -2.05
+   "cum_R": -5.02
   },
   {
-   "closed_utc": "2026-08-30 19:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": -1.09,
+   "closed_utc": "2026-08-02T05:01:00.800542+00:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -0.98,
    "exit": "stop",
-   "cum_R": -3.14
+   "cum_R": -6.0
   },
   {
-   "closed_utc": "2026-08-30 20:00",
+   "closed_utc": "2026-08-03T05:01:04.758109+00:00",
    "asset": "WIF",
-   "side": "long",
-   "net_R": -1.07,
-   "exit": "stop",
-   "cum_R": -4.21
+   "side": "short",
+   "net_R": 1.71,
+   "exit": "time stop",
+   "cum_R": -4.29
   },
   {
-   "closed_utc": "2026-08-30 23:00",
-   "asset": "PUMPFUN",
-   "side": "long",
-   "net_R": -1.04,
+   "closed_utc": "2026-08-03T15:01:03.461265+00:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -0.96,
    "exit": "stop",
    "cum_R": -5.25
   },
   {
-   "closed_utc": "2026-08-31 16:00",
-   "asset": "HYPE",
-   "side": "short",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": -6.29
-  },
-  {
-   "closed_utc": "2026-09-01 10:00",
-   "asset": "ENA",
-   "side": "short",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": -7.32
-  },
-  {
-   "closed_utc": "2026-09-01 18:00",
-   "asset": "HYPE",
-   "side": "long",
-   "net_R": -1.06,
-   "exit": "stop",
-   "cum_R": -8.38
-  },
-  {
-   "closed_utc": "2026-09-02 12:00",
-   "asset": "ENA",
-   "side": "long",
-   "net_R": -1.04,
-   "exit": "stop",
-   "cum_R": -9.42
-  },
-  {
-   "closed_utc": "2026-09-02 17:00",
-   "asset": "FARTCOIN",
-   "side": "short",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": -6.46
-  },
-  {
-   "closed_utc": "2026-09-03 14:00",
-   "asset": "PEPE",
-   "side": "short",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -7.51
-  },
-  {
-   "closed_utc": "2026-09-03 16:00",
+   "closed_utc": "2026-08-04T20:01:01.116180+00:00",
    "asset": "PUMPFUN",
-   "side": "short",
-   "net_R": -1.03,
-   "exit": "stop",
-   "cum_R": -8.54
-  },
-  {
-   "closed_utc": "2026-09-04 00:00",
-   "asset": "WLD",
    "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -9.59
-  },
-  {
-   "closed_utc": "2026-09-04 05:00",
-   "asset": "PEPE",
-   "side": "long",
-   "net_R": -1.05,
-   "exit": "stop",
-   "cum_R": -10.64
-  },
-  {
-   "closed_utc": "2026-09-04 11:00",
-   "asset": "XPL",
-   "side": "long",
-   "net_R": 2.96,
+   "net_R": 3.05,
    "exit": "target hit",
-   "cum_R": -7.68
+   "cum_R": -2.2
   },
   {
-   "closed_utc": "2026-09-04 14:00",
+   "closed_utc": "2026-08-05T09:01:04.739114+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": 0.8
+  },
+  {
+   "closed_utc": "2026-08-05T14:01:05.268455+00:00",
    "asset": "FARTCOIN",
    "side": "long",
-   "net_R": -1.04,
+   "net_R": -1.01,
    "exit": "stop",
-   "cum_R": -8.72
+   "cum_R": -0.21
   },
   {
-   "closed_utc": "2026-09-05 08:00",
+   "closed_utc": "2026-08-06T10:01:00.653209+00:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": -0.99,
+   "exit": "stop",
+   "cum_R": -1.2
+  },
+  {
+   "closed_utc": "2026-08-06T17:01:00.494926+00:00",
    "asset": "WIF",
    "side": "short",
-   "net_R": -1.04,
+   "net_R": -1.0,
    "exit": "stop",
-   "cum_R": -9.76
+   "cum_R": -2.2
   },
   {
-   "closed_utc": "2026-09-05 17:00",
-   "asset": "PEPE",
+   "closed_utc": "2026-08-07T06:01:05.387261+00:00",
+   "asset": "XPL",
    "side": "short",
-   "net_R": -1.04,
+   "net_R": -1.01,
    "exit": "stop",
-   "cum_R": -10.8
+   "cum_R": -3.21
   },
   {
-   "closed_utc": "2026-09-06 00:00",
+   "closed_utc": "2026-08-07T06:01:05.387261+00:00",
    "asset": "ENA",
    "side": "long",
-   "net_R": 2.96,
-   "exit": "target hit",
-   "cum_R": -7.84
+   "net_R": 1.76,
+   "exit": "time stop",
+   "cum_R": -1.45
   },
   {
-   "closed_utc": "2026-09-06 16:00",
+   "closed_utc": "2026-08-07T22:01:00.238845+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": -0.97,
+   "exit": "stop",
+   "cum_R": -2.42
+  },
+  {
+   "closed_utc": "2026-08-08T04:01:01.083207+00:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -3.42
+  },
+  {
+   "closed_utc": "2026-08-09T13:01:00.845961+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": 3.02,
+   "exit": "target hit",
+   "cum_R": -0.4
+  },
+  {
+   "closed_utc": "2026-08-09T16:01:00.836366+00:00",
+   "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -1.4
+  },
+  {
+   "closed_utc": "2026-08-09T23:01:00.416456+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -2.4
+  },
+  {
+   "closed_utc": "2026-08-10T07:01:05.329759+00:00",
+   "asset": "ENA",
+   "side": "short",
+   "net_R": -0.98,
+   "exit": "stop",
+   "cum_R": -3.38
+  },
+  {
+   "closed_utc": "2026-08-10T08:01:00.262301+00:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -4.39
+  },
+  {
+   "closed_utc": "2026-08-10T16:01:00.462142+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.04,
+   "exit": "stop",
+   "cum_R": -5.43
+  },
+  {
+   "closed_utc": "2026-08-10T18:01:00.450647+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -6.43
+  },
+  {
+   "closed_utc": "2026-08-11T14:01:01.619751+00:00",
    "asset": "HYPE",
    "side": "long",
-   "net_R": -1.08,
+   "net_R": -1.01,
    "exit": "stop",
-   "cum_R": -8.92
+   "cum_R": -7.44
   },
   {
-   "closed_utc": "2026-09-07 06:00",
+   "closed_utc": "2026-08-11T15:01:01.564923+00:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -8.44
+  },
+  {
+   "closed_utc": "2026-08-11T20:01:02.488027+00:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -9.44
+  },
+  {
+   "closed_utc": "2026-08-11T22:01:02.425812+00:00",
+   "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -10.44
+  },
+  {
+   "closed_utc": "2026-08-11T22:01:02.425812+00:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": -0.98,
+   "exit": "stop",
+   "cum_R": -11.42
+  },
+  {
+   "closed_utc": "2026-08-13T06:01:00.944278+00:00",
+   "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -12.42
+  },
+  {
+   "closed_utc": "2026-08-13T07:01:02.090361+00:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -13.42
+  },
+  {
+   "closed_utc": "2026-08-14T02:01:06.089227+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": 2.99,
+   "exit": "target hit",
+   "cum_R": -10.43
+  },
+  {
+   "closed_utc": "2026-08-14T03:01:06.078454+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": -1.02,
+   "exit": "stop",
+   "cum_R": -11.45
+  },
+  {
+   "closed_utc": "2026-08-14T08:01:05.101361+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -0.98,
+   "exit": "stop",
+   "cum_R": -12.43
+  },
+  {
+   "closed_utc": "2026-08-14T15:01:05.732442+00:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": 2.96,
+   "exit": "target hit",
+   "cum_R": -9.47
+  },
+  {
+   "closed_utc": "2026-08-14T18:01:03.519409+00:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -10.48
+  },
+  {
+   "closed_utc": "2026-08-14T22:01:00.719998+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -11.48
+  },
+  {
+   "closed_utc": "2026-08-15T03:01:04.573932+00:00",
+   "asset": "ENA",
+   "side": "short",
+   "net_R": -1.02,
+   "exit": "stop",
+   "cum_R": -12.5
+  },
+  {
+   "closed_utc": "2026-08-15T03:01:04.573932+00:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -13.51
+  },
+  {
+   "closed_utc": "2026-08-16T16:01:02.212149+00:00",
+   "asset": "ENA",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -14.51
+  },
+  {
+   "closed_utc": "2026-08-16T22:01:02.216913+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -0.97,
+   "exit": "stop",
+   "cum_R": -15.48
+  },
+  {
+   "closed_utc": "2026-08-16T22:01:02.216913+00:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": 2.99,
+   "exit": "target hit",
+   "cum_R": -12.49
+  },
+  {
+   "closed_utc": "2026-08-17T02:01:05.085973+00:00",
+   "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -13.49
+  },
+  {
+   "closed_utc": "2026-08-17T05:01:05.075682+00:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -14.5
+  },
+  {
+   "closed_utc": "2026-08-17T11:01:06.137404+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": 2.99,
+   "exit": "target hit",
+   "cum_R": -11.51
+  },
+  {
+   "closed_utc": "2026-08-17T20:01:00.402517+00:00",
    "asset": "WLD",
    "side": "long",
-   "net_R": 2.94,
-   "exit": "target hit",
-   "cum_R": -5.98
+   "net_R": -0.76,
+   "exit": "stop",
+   "cum_R": -12.27
   },
   {
-   "closed_utc": "2026-09-08 13:00",
+   "closed_utc": "2026-08-17T21:01:04.316265+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -13.27
+  },
+  {
+   "closed_utc": "2026-08-18T08:01:01.638002+00:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -14.27
+  },
+  {
+   "closed_utc": "2026-08-18T15:01:01.817027+00:00",
    "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -15.28
+  },
+  {
+   "closed_utc": "2026-08-18T15:01:01.817027+00:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -0.99,
+   "exit": "stop",
+   "cum_R": -16.27
+  },
+  {
+   "closed_utc": "2026-08-19T16:01:03.509633+00:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -0.92,
+   "exit": "stop",
+   "cum_R": -17.19
+  },
+  {
+   "closed_utc": "2026-08-19T20:01:01.297195+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": 3.01,
+   "exit": "target hit",
+   "cum_R": -14.18
+  },
+  {
+   "closed_utc": "2026-08-19T21:01:00.362285+00:00",
+   "asset": "WIF",
+   "side": "long",
+   "net_R": 3.01,
+   "exit": "target hit",
+   "cum_R": -11.17
+  },
+  {
+   "closed_utc": "2026-08-20T03:01:01.230602+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": 3.01,
+   "exit": "target hit",
+   "cum_R": -8.16
+  },
+  {
+   "closed_utc": "2026-08-20T16:01:01.120705+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": 3.1,
+   "exit": "target hit",
+   "cum_R": -5.06
+  },
+  {
+   "closed_utc": "2026-08-20T18:01:03.960761+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": -2.06
+  },
+  {
+   "closed_utc": "2026-08-21T00:01:00.976296+00:00",
+   "asset": "WIF",
+   "side": "long",
+   "net_R": 2.98,
+   "exit": "target hit",
+   "cum_R": 0.92
+  },
+  {
+   "closed_utc": "2026-08-21T02:01:01.038984+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": 3.92
+  },
+  {
+   "closed_utc": "2026-08-21T08:01:00.871028+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": 3.01,
+   "exit": "target hit",
+   "cum_R": 6.93
+  },
+  {
+   "closed_utc": "2026-08-21T10:01:00.837163+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": -0.98,
+   "exit": "stop",
+   "cum_R": 5.95
+  },
+  {
+   "closed_utc": "2026-08-22T00:01:04.553246+00:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": 8.95
+  },
+  {
+   "closed_utc": "2026-08-22T03:01:01.669363+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": 3.02,
+   "exit": "target hit",
+   "cum_R": 11.97
+  },
+  {
+   "closed_utc": "2026-08-22T05:01:05.209304+00:00",
+   "asset": "WLD",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": 14.97
+  },
+  {
+   "closed_utc": "2026-08-22T06:01:02.994983+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -0.84,
+   "exit": "stop",
+   "cum_R": 14.13
+  },
+  {
+   "closed_utc": "2026-08-22T06:01:02.994983+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": 13.12
+  },
+  {
+   "closed_utc": "2026-08-22T06:01:02.994983+00:00",
+   "asset": "WLD",
+   "side": "long",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": 12.11
+  },
+  {
+   "closed_utc": "2026-08-22T11:01:05.920605+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 11.11
+  },
+  {
+   "closed_utc": "2026-08-23T22:01:05.095980+00:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 10.11
+  },
+  {
+   "closed_utc": "2026-08-24T01:01:05.047464+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 9.11
+  },
+  {
+   "closed_utc": "2026-08-24T03:01:01.057294+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 8.11
+  },
+  {
+   "closed_utc": "2026-08-25T18:01:00.525801+00:00",
+   "asset": "WIF",
+   "side": "long",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": 7.1
+  },
+  {
+   "closed_utc": "2026-08-27T17:01:01.295859+00:00",
+   "asset": "ENA",
+   "side": "short",
+   "net_R": -0.99,
+   "exit": "stop",
+   "cum_R": 6.11
+  },
+  {
+   "closed_utc": "2026-08-28T05:01:03.183160+00:00",
+   "asset": "WLD",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 5.11
+  },
+  {
+   "closed_utc": "2026-08-29T09:01:00.820843+00:00",
+   "asset": "WIF",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 4.11
+  },
+  {
+   "closed_utc": "2026-08-29T19:01:01.672556+00:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": 1.17,
+   "exit": "time stop",
+   "cum_R": 5.28
+  },
+  {
+   "closed_utc": "2026-08-30T09:01:00.402044+00:00",
+   "asset": "WLD",
    "side": "long",
    "net_R": -1.05,
    "exit": "stop",
-   "cum_R": -7.03
+   "cum_R": 4.23
   },
   {
-   "closed_utc": "2026-09-09 21:00",
+   "closed_utc": "2026-08-30T18:01:04.703280+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 3.23
+  },
+  {
+   "closed_utc": "2026-08-30T21:01:00.356624+00:00",
+   "asset": "WIF",
+   "side": "long",
+   "net_R": -0.96,
+   "exit": "stop",
+   "cum_R": 2.27
+  },
+  {
+   "closed_utc": "2026-08-31T00:01:00.351730+00:00",
    "asset": "PUMPFUN",
    "side": "long",
-   "net_R": -1.03,
+   "net_R": -1.0,
    "exit": "stop",
-   "cum_R": -8.06
+   "cum_R": 1.27
+  },
+  {
+   "closed_utc": "2026-08-31T11:01:03.193112+00:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": 0.27
+  },
+  {
+   "closed_utc": "2026-08-31T17:01:06.158062+00:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -0.73
+  },
+  {
+   "closed_utc": "2026-09-01T09:01:05.523200+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -1.73
+  },
+  {
+   "closed_utc": "2026-09-01T16:01:00.898412+00:00",
+   "asset": "XPL",
+   "side": "short",
+   "net_R": -0.97,
+   "exit": "stop",
+   "cum_R": -2.7
+  },
+  {
+   "closed_utc": "2026-09-01T19:01:00.924376+00:00",
+   "asset": "HYPE",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -3.7
+  },
+  {
+   "closed_utc": "2026-09-02T18:01:00.714570+00:00",
+   "asset": "FARTCOIN",
+   "side": "short",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": -0.7
+  },
+  {
+   "closed_utc": "2026-09-03T15:01:05.435477+00:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -1.7
+  },
+  {
+   "closed_utc": "2026-09-03T17:01:01.343455+00:00",
+   "asset": "PUMPFUN",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -2.7
+  },
+  {
+   "closed_utc": "2026-09-04T06:01:01.135823+00:00",
+   "asset": "ENA",
+   "side": "long",
+   "net_R": -1.02,
+   "exit": "stop",
+   "cum_R": -3.72
+  },
+  {
+   "closed_utc": "2026-09-04T12:01:01.121385+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": -0.72
+  },
+  {
+   "closed_utc": "2026-09-04T13:01:01.151224+00:00",
+   "asset": "WIF",
+   "side": "long",
+   "net_R": -0.83,
+   "exit": "stop",
+   "cum_R": -1.55
+  },
+  {
+   "closed_utc": "2026-09-04T15:01:04.106089+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -2.56
+  },
+  {
+   "closed_utc": "2026-09-05T02:01:00.982403+00:00",
+   "asset": "WLD",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -3.57
+  },
+  {
+   "closed_utc": "2026-09-05T09:01:01.912155+00:00",
+   "asset": "WIF",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -4.57
+  },
+  {
+   "closed_utc": "2026-09-05T18:01:00.893353+00:00",
+   "asset": "PEPE",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -5.57
+  },
+  {
+   "closed_utc": "2026-09-06T14:01:00.613626+00:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": -0.79,
+   "exit": "stop",
+   "cum_R": -6.36
+  },
+  {
+   "closed_utc": "2026-09-07T07:01:05.322504+00:00",
+   "asset": "WLD",
+   "side": "long",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": -3.36
+  },
+  {
+   "closed_utc": "2026-09-07T11:01:05.280076+00:00",
+   "asset": "PUMPFUN",
+   "side": "short",
+   "net_R": -1.01,
+   "exit": "stop",
+   "cum_R": -4.37
+  },
+  {
+   "closed_utc": "2026-09-07T16:01:01.265574+00:00",
+   "asset": "PEPE",
+   "side": "long",
+   "net_R": -0.98,
+   "exit": "stop",
+   "cum_R": -5.35
+  },
+  {
+   "closed_utc": "2026-09-08T07:01:05.141373+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -6.35
+  },
+  {
+   "closed_utc": "2026-09-08T13:01:05.955995+00:00",
+   "asset": "XPL",
+   "side": "long",
+   "net_R": -1.02,
+   "exit": "stop",
+   "cum_R": -7.37
+  },
+  {
+   "closed_utc": "2026-09-08T14:01:04.860644+00:00",
+   "asset": "FARTCOIN",
+   "side": "long",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -8.37
+  },
+  {
+   "closed_utc": "2026-09-09T10:01:05.697601+00:00",
+   "asset": "WLD",
+   "side": "long",
+   "net_R": -0.95,
+   "exit": "stop",
+   "cum_R": -9.32
+  },
+  {
+   "closed_utc": "2026-09-09T20:01:05.695031+00:00",
+   "asset": "PUMPFUN",
+   "side": "long",
+   "net_R": -0.97,
+   "exit": "stop",
+   "cum_R": -10.29
+  },
+  {
+   "closed_utc": "2026-09-10T17:01:03.573297+00:00",
+   "asset": "HYPE",
+   "side": "short",
+   "net_R": 3.0,
+   "exit": "target hit",
+   "cum_R": -7.29
   }
  ]
 }
