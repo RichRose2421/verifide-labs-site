@@ -32,6 +32,7 @@ footer{color:var(--mut);font-size:12.5px;margin-top:28px;line-height:1.6}
 <div class="sub">A systematic crypto perp book, published trade by trade — wins and losses, as they close. <span id="gen"></span></div>
 
 <div class="tiles" id="tiles"></div>
+<p id="disclosure" class="mono" style="margin:14px 0 0;padding:12px 14px;border-left:3px solid #d8b04c;opacity:.92;font-size:12.5px;line-height:1.55"></p>
 
 <h2>Cumulative R — every closed trade</h2>
 <div class="card"><canvas id="chart"></canvas></div>
@@ -60,6 +61,10 @@ Nothing here is financial advice. Past results, simulated or real, do not guaran
     e.innerHTML=`<div class="v ${c||''}">${v}</div><div class="l">${l}</div>`;t.appendChild(e)};
   mk(d.n_closed,'closed trades');
   mk((d.total_R>=0?'+':'')+d.total_R.toFixed(1)+'R','total result',d.total_R>=0?'pos':'neg');
+  // The disclosure is not optional furniture. On 2026-09-10 this page's numbers
+  // changed because the book of record changed, and a restated number without
+  // the reason beside it is the thing we promise never to do.
+  if (d.disclosure) document.getElementById('disclosure').textContent = d.disclosure;
   mk(Math.round(d.win_rate*100)+'%','win rate (by design: few big wins carry many small stops)');
   const last=d.trades[d.trades.length-1];
   if(last) mk((last.net_R>=0?'+':'')+last.net_R+'R','latest close · '+last.asset+' '+last.side,last.net_R>=0?'pos':'neg');
