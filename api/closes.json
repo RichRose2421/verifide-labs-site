@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-10T23:52:29+00:00",
+ "generated_utc": "2026-09-11T00:22:53+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper account \u00b7 every trade as filled",
  "n_closed": 104,
  "total_R": -7.29,
@@ -7,7 +7,7 @@
  "concurrency": "the engine holds at most 4 positions; the limit is enforced by the engine, not applied afterwards",
  "worst_drawdown_R": -25.26,
  "worst_losing_streak": 13,
- "open_positions_not_shown": 3,
+ "open_positions_not_shown": 4,
  "disclosure": "From 2026-09-10 this record is the execution engine's own fill log. Before that date it was a model of the engine: the uncapped signal recorder with a max-4-concurrent rule replayed over it (ADR-011). The model disagreed with the engine by 6.3R across 11 trades and excluded real trades the engine took. The restated figure is better than the modelled one, which is why it is spelled out here. Earlier published numbers are kept in the archive, corrected in place, never deleted.",
  "win_rate": 0.24,
  "trades": [
