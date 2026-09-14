@@ -1,15 +1,15 @@
 {
- "generated_utc": "2026-09-14T06:39:54+00:00",
+ "generated_utc": "2026-09-14T07:10:11+00:00",
  "book": "Bybit \u00b7 8 execution assets \u00b7 paper account \u00b7 every trade as filled",
- "n_closed": 108,
- "total_R": -7.33,
+ "n_closed": 109,
+ "total_R": -8.33,
  "source": "executor fill log \u2014 real orders, real fills, slippage and fees included",
  "concurrency": "the engine holds at most 4 positions; the limit is enforced by the engine, not applied afterwards",
  "worst_drawdown_R": -25.26,
  "worst_losing_streak": 13,
- "open_positions_not_shown": 3,
+ "open_positions_not_shown": 2,
  "disclosure": "From 2026-09-10 this record is the execution engine's own fill log. Before that date it was a model of the engine: the uncapped signal recorder with a max-4-concurrent rule replayed over it (ADR-011). The model disagreed with the engine by 6.3R across 11 trades and excluded real trades the engine took. The restated figure is better than the modelled one, which is why it is spelled out here. Earlier published numbers are kept in the archive, corrected in place, never deleted.",
- "win_rate": 0.241,
+ "win_rate": 0.239,
  "trades": [
   {
    "closed_utc": "2026-07-30T14:01:00.408006+00:00",
@@ -874,6 +874,14 @@
    "net_R": -1.0,
    "exit": "stop",
    "cum_R": -7.33
+  },
+  {
+   "closed_utc": "2026-09-14T07:01:01.448168+00:00",
+   "asset": "ENA",
+   "side": "short",
+   "net_R": -1.0,
+   "exit": "stop",
+   "cum_R": -8.33
   }
  ]
 }
